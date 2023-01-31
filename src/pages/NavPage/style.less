@@ -1,0 +1,219 @@
+@import '../../styles/entry.less';
+
+.dat3-nav-page {
+  display: flex;
+  flex-direction: column;
+  & > header {
+    width: 100%;
+    height: 1.11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #eee;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    .dat3-nav-logo {
+      max-width: 6.19rem;
+      min-width: 2.26rem;
+      padding: 0 15px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      .dat3-icon-logo {
+        height: 0.67rem;
+      }
+    }
+    .dat3-nav-list {
+      display: flex;
+      flex-direction: row;
+      li {
+        flex: 1;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: 0 0.56rem;
+        position: relative;
+        &:not(:last-child)::after {
+          position: absolute;
+          content: '';
+          width: 1px;
+          height: 0.33rem;
+          background-color: #D841FF;
+          right: 0;
+          top: 0.39rem;
+        }
+        a {
+          color: #333333;
+          display: block;
+          box-sizing: border-box;
+          border-radius: 4px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            cursor: pointer;
+            background-color: rgba(#ddd, 0.3);
+          }
+          img {
+            width: 0.35rem;
+            height: 0.3rem;
+          }
+          span {
+            margin-left: 5px;
+            font-size: 0.26rem;
+            font-family: LEMONMILK-Regular, LEMONMILK;
+            font-weight: 400;
+            color: #666666;
+          }
+        }
+      }
+    }
+  }
+  .dat3-main-container {
+    min-height: 100%;
+    box-sizing: border-box;
+    padding-top: 1.563rem;
+    position: relative;
+    .dat3-back-btn {
+      position: absolute;
+      cursor: pointer;
+      padding: 0.2rem 0.3rem;
+      top: 0.4rem;
+      left: 0.3rem;
+      z-index: 9999;
+      height: auto;
+      img {
+        width: 0.23rem;
+        height: 0.36rem;
+      }
+    }
+  }
+  .dat3-main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px 0px rgba(213,204,253,0.4);
+    background-color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    border-top-left-radius: @radius;
+    border-top-right-radius: @radius;
+    overflow: hidden;
+    & > * {
+      flex: 1;
+      position: relative;
+    }
+  }
+  .dat3-footer {
+    box-shadow: 0 0 0 4px rgba(#eee, 0.3);
+    background-color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .dat3-nav-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100%;
+      li {
+        flex: 1;
+        padding: 8px 0 4px;
+        position: relative;
+        &:not(:last-child)::after {
+          position: absolute;
+          content: '';
+          width: 1px;
+          height: 10px;
+          background-color: #D841FF;
+          right: 0;
+          top: 19px;
+        }
+        a {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          img {
+            width: 18px;
+            height: 16px;
+          }
+          span {
+            font-size: 12px;
+            color: #333;
+            font-family: LEMONMILK-Regular, LEMONMILK;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dat3-web {
+  .dat3-nav-page {
+    & > header {
+      .dat3-nav-logo {
+        padding-right: 3.7rem;
+      }
+    }
+  }
+  .dat3-main {
+    width: @web-content-width;
+    .dat3-page-container {
+      & + .dat3-button {
+        margin-bottom: 0.74rem;
+      }
+    }
+  }
+}
+
+.dat3-mobile {
+  .dat3-nav-page {
+    background-color: #fff;
+    & > header {
+      display: none;
+    }
+  }
+  .dat3-main-container {
+    padding-top: 0;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    padding-bottom: 50px;
+    box-sizing: border-box;
+  }
+  .dat3-main {
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow: auto;
+    margin-bottom: 50px;
+    & > div {
+      // overflow: auto;
+      box-sizing: border-box;
+    }
+    .dat3-page-container {
+      height: 100%;
+      margin-bottom: 0;
+      overflow: initial;
+    }
+  }
+  .dat3-button {
+    font-size: 0.36rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 0.8rem;
+    p {
+      left: 0;
+    }
+  }
+}

@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'LEMONMILK-Bold';
+  src: url("../assets/font/LEMONMILK-Bold.otf");
+}
+@font-face {
+  font-family: 'LEMONMILK-BoldItalic';
+  src: url("../assets/font/LEMONMILK-BoldItalic.otf");
+}
+@font-face {
+  font-family: 'LEMONMILK-Light';
+  src: url("../assets/font/LEMONMILK-Light.otf");
+}
+@font-face {
+  font-family: 'LEMONMILK-LightItalic';
+  src: url("../assets/font/LEMONMILK-LightItalic.otf");
+}
+@font-face {
+  font-family: 'LEMONMILK-Medium';
+  src: url("../assets/font/LEMONMILK-Medium.otf");
+}
+@font-face {
+  font-family: 'LEMONMILK-MediumItalic';
+  src: url("../assets/font/LEMONMILK-MediumItalic.otf");
+}
+@font-face {
+  font-family: 'LEMONMILK-Regular';
+  src: url("../assets/font/LEMONMILK-Regular.otf");
+}
+@font-face {
+  font-family: 'LEMONMILK-RegularItalic';
+  src: url("../assets/font/LEMONMILK-RegularItalic.otf");
+}
+@font-face {
+  font-family: 'LLPIXEL3';
+  src: url("../assets/font/LLPIXEL3.ttf");
+}
+
+html, body, #root, .dat3-nav-page {
+  height: 100%;
+  background-color: #F9FBFC;
+}
+
+html.full,
+html.full body,
+html.full #root {
+  height: 100%;
+} {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 0;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}

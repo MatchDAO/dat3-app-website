@@ -1,0 +1,78 @@
+.dat3-home-page {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: transparent;
+  min-height: 100%;
+  .dat3-home-logos {
+    margin-top: 3.63rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img:first-child {
+      width: 1.8rem;
+      height: auto;
+      margin-bottom: 0.74rem;
+    }
+    img:last-child {
+      width: 3.89rem;
+      height: auto;
+    }
+  }
+  .dat3-bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .dat3-partners-logos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.6rem;
+    .dat3-partners-list {
+      justify-content: center;
+      flex-direction: row;
+      align-items: center;
+      img {
+        width: 0.56rem;
+        height: 0.56rem;
+        margin: 0 0.333rem;
+        margin: 0 0.33rem;
+      }
+    }
+    p {
+      font-size: 15px;
+      font-family: LEMONMILK-Regular, LEMONMILK;
+      font-weight: 400;
+      color: #FFFFFF;
+      line-height: 0.74rem;
+      margin-bottom: 0.63rem;
+    }
+  }
+}
+
+.dat3-web .dat3-home-page {
+  .dat3-home-logos {
+    margin-bottom: 2.5rem;
+  }
+}
+.dat3-mobile .dat3-home-page {
+  justify-content: space-between;
+  .dat3-home-logos {
+    margin-top: 4.4rem;
+    img:first-child {
+      width: 2.4rem;
+    }
+    img:last-child {
+      width: 6.27rem;
+    }
+  }
+  .dat3-partners-logos p {
+    font-size: 13px;
+  }
+}

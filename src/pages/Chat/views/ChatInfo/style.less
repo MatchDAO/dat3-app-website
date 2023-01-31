@@ -1,0 +1,71 @@
+@import '../../../../styles/entry.less';
+
+.dat3-chat-info-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0.463rem;
+  img {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+  }
+  .dat3-chat-content {
+    & > p {
+      position: relative;
+      line-height: 0.44rem;
+      padding: 0.28rem 0.38rem;
+      border-radius: 0.37rem;
+      background-color: #EDEDED;
+      max-width: 7.78rem;
+      text-align: left;
+      word-break: break-word;
+      font-size: 0.3rem;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0.27rem;
+        width: 0;
+        height: 0;
+        border-top: 0.2rem solid transparent;
+        border-right: 0.4rem solid transparent;
+        border-bottom: 0.2rem solid transparent;
+        border-left: 0.4rem solid transparent;
+      }
+    }
+  }
+  .dat3-content-extra {
+    font-size: 0.33rem;
+    font-family: LEMONMILK-Regular, LEMONMILK;
+    font-weight: 400;
+    margin-left: 0.556rem;
+  }
+  &.other .dat3-chat-content {
+    & > p {
+      margin-left: 0.4rem;
+      &::before {
+        left: -0.62rem;
+        border-right-color: #EDEDED;
+      }
+    }
+  }
+  &.owner {
+    justify-content: right;
+    text-align: right;
+    .dat3-chat-content {
+      & > p {
+        background-color: #F3EDFF;
+        margin-right: 0.3rem;
+        &::before {
+          right: -0.62rem;
+          border-left-color: #F3EDFF;
+        }
+      }
+    }
+    img {
+      background-color: #DBE2FF;
+    }
+  }
+}

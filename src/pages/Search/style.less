@@ -1,0 +1,124 @@
+@import '../../styles/entry.less';
+
+.dat3-search-page {
+  padding: 0.463rem 0.185rem 0.93rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  & > div.dat3-page-container {
+    width: 100%;
+  }
+  header {
+    line-height: 0.648rem;
+    font-size: 0.519rem;
+    font-weight: bold;
+    margin-bottom: 0.74rem;
+  }
+  .dat3-search-input {
+    background-color: #F2EEFF;
+    border-radius: 6px;
+    line-height: 1.48rem;
+    font-size: 0.519rem;
+    padding: 0.185rem 0.556rem 0.185rem 0.185rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img:first-child {
+      width: 1.111rem;
+      height: 1.111rem;
+    }
+    img:last-child {
+      width: 0.333rem;
+      height: 0.333rem;
+    }
+    input {
+      line-height: 1.111rem;
+      margin: 0 8px 0 4px;
+      flex: 1;
+      font-size: @normalFt * 2;
+      font-weight: 400;
+      color: #333;
+      background-color: transparent;
+      outline: none;
+    }
+  }
+  .dat3-user-list {
+    margin: 0.63rem 0 1.61rem;
+    height: 5.241rem;
+    overflow: auto;
+    position: relative;
+    .dat3-search-user-item {
+      display: flex;
+      flex-direction: row;
+      img {
+        width: @logoSize * 2;
+        height: @logoSize * 2;
+        border-radius: 50%;
+      }
+      .dat3-search-user-content {
+        margin-left: 0.278rem;
+        text-align: left;
+        p:first-child {
+          line-height: 0.463rem;
+          font-size: 0.37rem;
+          font-weight: bold;
+          color: #333;
+          margin: 0.148rem 0 0.185rem;
+        }
+        p:last-child {
+          line-height: 0.333rem;
+          font-size: @normalFt;
+          font-weight: 400;
+          color: #666;
+        }
+      }
+    }
+  }
+  .dat3-button-container {
+    position: absolute;
+    bottom: 0.93rem;
+    .dat3-icon-coin {
+      position: absolute;
+      z-index: 9;
+      background-color: #FFD91D;
+      border-radius: @radius;
+      top: -0.18rem;
+      right: 0.74rem;
+      font-size: 12px;
+      padding: 0 0.46rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 0.333rem;
+        height: 0.333rem;
+        margin-right: 4px;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -0.25rem;
+        left: 0.5rem;
+        width: 0;
+        height: 0;
+        border: 0.148rem solid transparent;
+        border-top-color: #FFD91D;
+      }
+    }
+  }
+}
+.dat3-mobile {
+  .dat3-search-page .dat3-button-container {
+    .dat3-icon-coin {
+      top: -0.11rem;
+    }
+  }
+}
+.dat3-web {
+  .dat3-search-page .dat3-button-container {
+    .dat3-icon-coin {
+      line-height: 0.56rem;
+    }
+  }
+}

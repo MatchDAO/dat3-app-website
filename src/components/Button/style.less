@@ -1,0 +1,66 @@
+
+.dat3-button {
+  display: inline-block;
+  position: relative;
+  width: 6.8rem;
+  height: 1.11rem;
+  font-size: 0.3rem;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+  // background: url('../../assets/images/img_btn_bg_default.png') no-repeat;
+  background-size: cover;
+  &:not(.disabled):hover {
+    // background-image: url('../../assets/images/img_btn_bg_other.png');
+    i {
+      opacity: 0.7;
+    }
+  }
+  .dat3-btn-bg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    i {
+      background-color: #D841FF;
+      border-bottom: 1px solid #D841FF;
+      border-top: 1px solid #D841FF;
+      box-sizing: border-box;
+    }
+    i:first-child, i:last-child {
+      width: 86%;
+      height: 0.07rem;
+    }
+    i:nth-child(2), i:nth-child(8) {
+      width: 92%;
+      height: 0.07rem;
+    }
+    i:nth-child(3), i:nth-child(7) {
+      width: 95%;
+      height: 0.07rem;
+    }
+    i:nth-child(4), i:nth-child(6) {
+      width: 98%;
+      height: 0.16rem;
+    }
+    i:nth-child(5) {
+      width: 100%;
+      height: 0.36rem;
+    }
+  }
+  p {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    font-family: 'LEMONMILK-Regular', 'LEMONMILK';
+  }
+  &.disabled {
+    cursor: not-allowed;
+    pointer-events: none;
+    // background-image: url('../../assets/images/img_btn_bg_other.png');
+  }
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,108 @@
+@import '../../styles/entry.less';
+
+.dat3-download-page {
+  padding-top: 0.45rem;
+  header {
+    font-weight: 400;
+    color: #333;
+    margin-top: 0.28rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.72rem;
+    font-family: LLPIXEL3;
+    color: #000000;
+    line-height: 0.86rem;
+  }
+  .dat3-road-map-container {
+    .dat3-road-map-nav {
+      margin: 0 auto 0.5rem;
+      width: 4.2rem;
+      position: relative;
+      // background-color: #CAD4FF;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-size: cover;
+      // &::before {
+      //   content: '';
+      //   position: absolute;
+      //   width: 2.78rem;
+      //   border-radius: @radius * 2;
+      //   height: 100%;
+      //   background-color: #D841FF;
+      //   top: 0;
+      //   bottom: 0;
+      //   left: 0;
+      // }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+      }
+      li {
+        color: #333;
+        font-size: 0.3rem;
+        line-height: 0.38rem;
+        padding: 0.22rem 0 0.22rem 0.18rem;
+        font-family: LEMONMILK-Regular, LEMONMILK;
+        font-weight: 400;
+        &.active, &:hover {
+          font-weight: bold;
+          color: #FFFFFF;
+          cursor: pointer;
+        }
+      }
+    }
+    .dat3-road-map-info {
+      margin-bottom: 0.64rem;
+      padding: 0 0.85rem;
+      .dat3-road-map-item {
+        text-align: left;
+        margin-bottom: 20px;
+        header {
+          color: #EC14FD;
+          margin-bottom: 10px;
+          font-size: 0.28rem;
+          font-family: LEMONMILK-Bold, LEMONMILK;
+          font-weight: bold;
+          color: #000000;
+          line-height: 0.38rem;
+        }
+        p {
+          font-size: 0.28rem;
+          line-height: 0.42rem;
+          font-family: PingFangSC-Light, PingFang SC;
+          font-weight: 300;
+          i {
+            width: 0.08rem;
+            height: 0.08rem;
+            border-radius: 50%;
+            background-color: #5F5F5F;
+            margin-right: 5px;
+            margin-bottom: 2px;
+            display: inline-block;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+  }
+  .dat3-download-container {
+    margin: 0.75rem 0.85rem 0.25rem;
+    background: #F1EEFF;
+    border-radius: @radius;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.dat3-nav-page .dat3-main > .dat3-download-page {
+  height: auto;
+}
+
+.dat3-web .dat3-download-page {
+  padding-bottom: 0.5rem;
+}

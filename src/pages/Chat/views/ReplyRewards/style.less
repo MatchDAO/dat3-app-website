@@ -1,0 +1,105 @@
+.dat3-chat-reply-rewards {
+  position: relative;
+  header {
+    text-align: center;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    p:first-child {
+      line-height: 0.67rem;
+      margin-bottom: 0.37rem;
+      font-size: 0.62rem;
+      line-height: 0.84rem;
+      font-family: LEMONMILK-Bold, LEMONMILK;
+      font-weight: bold;
+      color: #000000;
+    }
+    p:last-child {
+      font-size: 0.28rem;
+      font-weight: 400;
+      color: #666660;
+      line-height: 0.36rem;
+      span {
+        font-family: LEMONMILK-Regular, LEMONMILK;
+      }
+      span:last-child {
+        color: #D841FF;
+      }
+    }
+  }
+  .dat3-reply-reward-item {
+    margin-left: 0.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-bottom: 0.67rem;
+    img {
+      width: 1.12rem;
+      height: 1.05rem;
+    }
+    .dat3-reward-description {
+      text-align: left;
+      margin-left: 0.37rem;
+      p:first-child {
+        margin-top: 5px;
+        font-size: 0.3rem;
+        font-family: LEMONMILK-Regular, LEMONMILK;
+        font-weight: 400;
+        color: #000000;
+        line-height: 0.32rem;
+      }
+      p:last-child {
+        font-size: 0.45rem;
+        font-family: LEMONMILK-Bold, LEMONMILK;
+        font-weight: bold;
+        color: #000000;
+        line-height: 0.75rem;
+      }
+    }
+  }
+  .dat3-chat-reply-rewards-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0.2rem;
+    .dat3-button {
+      width: 100%;
+      padding: 0 15px;
+      box-sizing: border-box;
+      position: relative;
+      .dat3-btn-bg {
+        width: 100%;
+        i:first-child, i:last-child {
+          width: 82%;
+        }
+        i:nth-child(2), i:nth-child(8) {
+          width: 90%;
+        }
+        i:nth-child(3), i:nth-child(7) {
+          width: 94%;
+        }
+        i:nth-child(4), i:nth-child(6) {
+          width: 97%;
+        }
+      }
+      p {
+        left: 0;
+      }
+    }
+    .dat3-btn-bg {
+      width: 5.83rem;
+      margin: 0 auto;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+.dat3-mobile + div {
+  .modal-plane {
+    .dat3-icon-close {
+      width: 0.46rem;
+      height: 0.46rem;
+      &::before, &::after {
+        width: 0.46rem;
+      }
+    }
+  }
+}

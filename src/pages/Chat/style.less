@@ -1,0 +1,162 @@
+@import '../../styles//entry.less';
+
+.dat3-chat-page {
+  border-radius: @radius;
+  background-color: rgba(#eee, .8);
+  background-repeat: no-repeat;
+  background-size: cover;
+  .dat3-logo {
+    padding-top: 0.53rem;
+    margin-bottom: 0.53rem;
+    font-size: 0.43rem;
+  }
+  .dat3-chat-container {
+    background-color: #FCFCFC;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    height: 100%;
+    box-sizing: border-box;
+    flex: 1;
+    .dat3-chat-content-list {
+      min-height: 9.44rem;
+      padding: 0.94rem 0.61rem;
+      padding-bottom: 2.3rem;
+      overflow: auto;
+      .dat3-chat-info-item.owner {
+        .dat3-content-extra {
+          margin-left: 0.28rem;
+          span {
+            font-size: 0.26rem;
+            font-family: LEMONMILK-Medium, LEMONMILK;
+            font-weight: 500;
+            color: #D841FF;
+            text-decoration: underline;
+            cursor: pointer;
+            position: relative;
+            &::before {
+              content: '';
+              position: absolute;
+              bottom: 0.1rem;
+              right: -0.3rem;
+              width: 0;
+              height: 0;
+              border: 0.12rem solid transparent;
+              border-left-color: #D841FF;
+            }
+          }
+        }
+      }
+      .reply-coin {
+        display: flex;
+        align-items: center;
+        font-size: 0.26rem;
+        margin-top: 0.15rem;
+        color: #333333;
+        font-weight: bold;
+        img {
+          width: 0.46rem;
+          height: 0.45rem;
+          margin-left: 7px;
+          margin-right: 4px;
+        }
+        span {
+          font-size: 0.26rem;
+          font-family: LEMONMILK-Regular, LEMONMILK;
+        }
+      }
+    }
+  }
+  .dat3-input-container {
+    position: fixed;
+    bottom: 0;
+    width: @web-content-width;
+    padding: 0.1rem 0.52rem 0.4rem;
+    box-sizing: border-box;
+    transition: bottom 0.1s;
+    .dat3-input-area {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      input {
+        width: 6rem;
+        line-height: 0.83rem;
+        background-color: #F8F6FF;
+        border-radius: 0.78rem;
+        font-size: 0.36rem;
+        font-family: PingFangSC-Light, PingFang SC;
+        font-weight: 300;
+        color: #000000;
+        padding: 0 0.36rem;
+        box-sizing: border-box;
+      }
+      .dat3-chat-btn {
+        width: 0.86rem;
+        height: 0.86rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+    }
+    .dat3-input-btn-tip {
+      border-radius: @radius * 2;
+      padding: 0.21rem 0.5rem;
+      background-color: #D841FF;
+      font-family: LEMONMILK-Regular, LEMONMILK;
+      color: #fff;
+      position: absolute;
+      right: 0.37rem;
+      top: -1.2rem;
+      font-size: 0.26rem;
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: -0.3rem;
+        right: 0.45rem;
+        width: 0;
+        height: 0;
+        border-top: 0.3rem solid transparent;
+        border-bottom: 0.148rem solid transparent;
+        border-right: 0.148rem solid transparent;
+        border-left: 0.148rem solid transparent;
+        border-top-color: #D841FF;
+      }
+    }
+  }
+}
+.dat3-mobile .dat3-chat-page {
+  .dat3-chat-container {
+    height: calc(100% - 1.78rem);
+    overflow: auto;
+    .dat3-chat-content-list .dat3-chat-info-item.owner .dat3-content-extra {
+      .reply-coin span::before { 
+        bottom: 0.13rem;
+      }
+    }
+    .dat3-chat-info-item .dat3-chat-content > p {
+      font-size: 13px;
+      line-height: 0.5rem;
+    }
+  }
+  .dat3-page-container {
+    .dat3-logo span {
+      font-size: 0.34rem;
+    }
+  }
+  .dat3-input-container {
+    width: 100%;
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+    bottom: 50px;
+    .dat3-button {
+      padding: 0;
+    }
+    .dat3-input-btn-tip {
+      top: -1.3rem;
+    }
+    .dat3-input-area input {
+      width: 7.5rem;
+      line-height: 1rem;
+      padding: 0 0.46rem;
+      font-size: 0.4rem;
+    }
+  }
+}

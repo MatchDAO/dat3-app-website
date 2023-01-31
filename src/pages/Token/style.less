@@ -1,0 +1,93 @@
+@import '../../styles/entry.less';
+
+.dat3-token-page {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .dat3-page-container {
+    overflow: auto;
+  }
+  .dat3-charts {
+    padding-top: 1.32rem;
+    min-height: 3.33rem;
+  }
+  .dat3-chart-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0.25rem;
+    span:first-child {
+      display: inline-block;
+      width: 0.32rem;
+      height: 0.28rem;
+      border-radius: 4px;
+      vertical-align: middle;
+    }
+    span:last-child {
+      font-size: 0.26rem;
+      font-family: LEMONMILK-Light, LEMONMILK;
+      font-weight: 300;
+      color: #000000;
+      line-height: 0.44rem;
+      vertical-align: middle;
+      margin-left: 4px;
+    }
+  }
+  .dat3-token-info {
+    text-align: left;
+    padding: 0.42rem 0.48rem;
+    header {
+      font-size: 0.56rem;
+      font-family: LEMONMILK-Bold, LEMONMILK;
+      font-weight: bold;
+      color: #000000;
+      line-height: 0.74rem;
+      margin-bottom: 0.18rem;
+    }
+    p {
+      font-size: 0.28rem;
+      font-family: PingFangSC-Light, PingFang SC;
+      font-weight: 300;
+      color: #000000;
+      opacity: 0.8;
+      line-height: 0.44rem;
+      white-space: pre-line;
+    }
+  }
+  .dat3-button {
+    width: @web-content-width * 0.8;
+  }
+}
+
+.dat3-nav-page .dat3-main > .dat3-token-page {
+  height: auto;
+}
+.dat3-web .dat3-main .dat3-token-page {
+  .dat3-page-container {
+    padding-bottom: 2.04rem;
+    & + .dat3-button {
+      position: fixed;
+      bottom: 0.93rem;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.dat3-mobile .dat3-main {
+  .dat3-token-page {
+    padding-bottom: 0.56rem;
+    height: 100%;
+    .dat3-token-info {
+      p {
+        font-size: 0.36rem;
+        line-height: 0.48rem;
+      }
+    }
+    .dat3-button {
+      width: 8rem;
+      padding: 0;
+    }
+  }
+}
