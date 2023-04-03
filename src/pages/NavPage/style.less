@@ -70,6 +70,40 @@
             font-family: LEMONMILK-Regular, LEMONMILK;
             font-weight: 400;
             color: #666666;
+            white-space: nowrap;
+          }
+        }
+      }
+      & > a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0.56rem;
+        .dat3-button {
+          width: 3.2rem;
+          text-align: center;
+          height: auto;
+          .dat3-btn-bg {
+            i:first-child, i:last-child {
+              width: 70%;
+              height: 0.05rem;
+            }
+            i:nth-child(2), i:nth-child(8) {
+              width: 84%;
+              height: 0.05rem;
+            }
+            i:nth-child(3), i:nth-child(7) {
+              width: 89%;
+              height: 0.07rem;
+            }
+            i:nth-child(4), i:nth-child(6) {
+              width: 94%;
+              height: 0.10rem;
+            }
+            i:nth-child(5) {
+              width: 100%;
+              height: 0.26rem;
+            }
           }
         }
       }
@@ -80,6 +114,9 @@
     box-sizing: border-box;
     padding-top: 1.563rem;
     position: relative;
+    &.dat3-mint {
+      padding-top: 1.11rem;
+    }
     .dat3-back-btn {
       position: absolute;
       cursor: pointer;

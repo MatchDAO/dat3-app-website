@@ -2,18 +2,18 @@
  * @Author: WangHao
  * @Date: 2023-01-07 11:20:42
  * @LastEditors: WangHao
- * @LastEditTime: 2023-01-28 17:18:44
+ * @LastEditTime: 2023-04-04 00:06:52
  * @Description: 页面内配置内容
  */
 import img_user_img from 'assets/images/img_user_img.png';
 
 // 币方图标
-import icon_eth2 from 'assets/images/icon_eth2.png';
+// import icon_eth2 from 'assets/images/icon_eth2.png';
 
 // 导航栏
 import icon_discord from 'assets/images/nav/icon-discord.png';
 import icon_twitter from 'assets/images/nav/icon-twitter.png';
-import icon_tokenomics from 'assets/images/nav/icon-tokenomics.png';
+import icon_doc from 'assets/images/nav/icon-doc.png';
 import icon_logo from 'assets/images/nav/icon-logo.png';
 import icon_arrow from 'assets/images/nav/icon-arrow.png';
 
@@ -23,17 +23,18 @@ import icon_home_logo from 'assets/images/home/icon-logo@2x.png';
 import icon_logo_font from 'assets/images/home/icon-logo-font.png';
 import img_home_bg from 'assets/images/home/img_home_bg.png';
 import partner_yellow_logo from 'assets/images/home/icon-parnter-1.png';
-import partner_ETH_logo from 'assets/images/home/icon-parnter-2.png';
-import partner_logo_3 from 'assets/images/home/icon-parnter-3.png';
+import partner_ETH_logo from 'assets/images/home/icon-aptos.png';
+import partner_logo_3 from 'assets/images/home/icon-sui.svg';
 
 // 聊天页
 import icon_chat_btn from 'assets/images/chat/icon-chat-btn.png';
-import icon_coin from 'assets/images/chat/icon-coin.png';
+import icon_coin from 'assets/images/home/icon-aptos.png';
 import icon_chat_logo from 'assets/images/chat/icon-logo.png';
 import icon_owner from 'assets/images/chat/icon-owner.png';
 
 // 回复弹窗
 import img_rewards_bg from 'assets/images/chat/img_rewards_bg.png';
+import icon_tokenomics from 'assets/images/nav/icon-tokenomics.png';
 
 // 信息展示
 import img_img1 from 'assets/images/info/img_img1.png';
@@ -43,8 +44,8 @@ import img_img4 from 'assets/images/info/img_img4.png';
 
 // 下载页
 import img_nav_bg_1 from 'assets/images/img_nav_bg_1.png';
-import img_nav_bg_2 from 'assets/images/img_nav_bg_2.png';img_download
-import img_download from 'assets/images/roadmap/img_download.png';
+import img_nav_bg_2 from 'assets/images/img_nav_bg_2.png';
+import img_download from 'assets/images/roadmap/img_download.jpeg';
 
 
 const publicInfo = {
@@ -61,8 +62,9 @@ export default {
     navList: [
       { icon: icon_discord, name: 'DISCORD', url: 'https://discord.gg/yD447YwBve' },
       { icon: icon_twitter, name: 'TWITTER', url: 'https://twitter.com/chatdat3' },
-      { icon: icon_tokenomics, name: 'TOKENOMICS', url: 'https://matchdao-web3.gitbook.io/dat3-lite-paper/' },
-    ]
+      { icon: icon_doc, name: 'DOC', url: 'https://matchdao-web3.gitbook.io/dat3-lite-paper/' },
+      // { name: 'MINT', url: '/mint', out: true },
+    ],
   },
 
   // 主页
@@ -91,7 +93,7 @@ export default {
         avatar: icon_chat_logo,
         role: 'other',
         text: 'Welcome! You can use DAT3 to provide paid consultation services to your potential clients. Advisory services can be in the legal, business, psychological, gaming or other fields.',
-        extra: { icon: icon_coin, text: '+0.00006' },
+        extra: { icon: icon_coin, text: '+0.00700' },
       },
       {
         avatar: icon_owner,
@@ -113,7 +115,7 @@ export default {
     head: { title: 'Reply rewards', mainTip: 'reply to get rewards within ', sideTip: '12hrs' },
     bg: img_rewards_bg,
     rewards: [
-      { icon: icon_eth2, title: 'TALK TO EARN', text: '+0.00006', tip: null },
+      { icon: partner_ETH_logo, title: 'TALK TO EARN', text: '+0.00700', tip: null },
       { icon: icon_tokenomics, title: '$DAT3 DISTRIBUTE IN', text: '23:11:12 ', tip: null },
     ],
     // tips: { icon: icon_clock, text: '23:11:12 Auto-distribute DAT3' },
@@ -128,7 +130,7 @@ export default {
   //     { avatar: icon_search_user, name: 'DAT3', info: 'address：DAT3.eth' },
   //   ],
   //   coin: {
-  //     icon: icon_tokenomics, text: '+DAT3',
+  //     icon: icon_doc, text: '+DAT3',
   //   },
   //   btnText: 'View profile',
   // },
@@ -163,18 +165,18 @@ export default {
   token: {
     chart: {
       // legend: ['Talk', 'Stake', 'Active', 'Team&Invester'],
-      x: [2628000, 5256000, 7884000, 10512000, 13140000, 15768000, 18396000],
-      xLimit: { min: 0, max: 20000000 },
+      x: [0, 4380, 8760, 13140, 17520, 21900, 26280, 30660],
+      xLimit: { min: 0, max: 32000 },
       y: {
-        talk: [35, 52.5, 61.25, 65.63, 67.81, 68.91, 69.45],
-        team: [15, 22.5, 26.25, 28.13, 29.06, 29.53, 29.77],
-        active: [10, 15, 17.5, 18.75, 19.38, 19.69, 19.84],
-        stake: [5, 7.5, 8.75, 9.38, 9.69, 9.84, 9.92],
+        talk: [0, 35, 52.5, 61.25, 65.63, 67.81, 68.91, 69.45], 
+        team: [0, 15, 22.5, 26.25, 28.13, 29.06, 29.53, 29.77], 
+        stake: [0, 7.5, 11.25, 13.13, 14.06, 14.53, 14.77, 14.84],
+        // activ: [0, 10, 15, 17.5, 18.75, 19.38, 19.69, 19.84],
       },
       yLimit: { min: 0, max: 100 },
       color: {
         talk: '#18F2FE',
-        active: '#A498EC',
+        // active: '#A498EC',
         stake: '#F1747C',
         team: '#71F496',
       },
@@ -183,19 +185,19 @@ export default {
     },
     totals: [
       { name: 'Talk', color: '#18F2FE' },
-      { name: 'Active', color: '#A498EC' },
+      // { name: 'Active', color: '#A498EC' },
       { name: 'Stake', color: '#F1747C' },
       { name: 'Team&Inverst', color: '#71F496' },
     ],
     title: 'Tokenomics',
     text: `The DAT3 token has an initial issue size of 0 and a total volume of less than 5,256,000.
-    7,200 DAT3 will be released every 7,200 blocks.
+    7,200 DAT3 will be released every 12 epochs.
     Relative liquidity is controlled through a "governance right = stake volume * time" scheme.
     Deflationary mechanism for tokens is guaranteed through a perpetual buyback of platform fee revenue and an NFT auction system.\n
     `,
     rewards: [
-      { icon: icon_eth2, name: 'ETH Reward', content: '+0.002' },
-      { icon: icon_tokenomics, name: 'DAT3 Reward', content: '+1000' },
+      { icon: partner_ETH_logo, name: 'ETH Reward', content: '+0.002' },
+      { icon: icon_doc, name: 'DAT3 Reward', content: '+1000' },
     ],
     btnText: 'ROADMAP',
   },
@@ -205,7 +207,7 @@ export default {
     header: 'RoadMap',
     roadMaps: [
       {
-        name: '2023 Q1',
+        name: 'Q2 2023',
         bg: img_nav_bg_1,
         list: [
           {
@@ -220,13 +222,12 @@ export default {
             title: 'Community/Growth:',
             list: [
               'Internal Testing',
-              'Vampire Attack',
+              'DAT Invitation Pass Mint',
             ],
           },
           {
             title: 'Other Build:',
             list: [
-              'Fund Raising(Seed)',
               '$DAT3 - The governance token',
               'Contract Audit'
             ],
@@ -234,7 +235,7 @@ export default {
         ],
       },
       {
-        name: '2023 Q2',
+        name: 'Q3 2023',
         bg: img_nav_bg_2,
         list: [
           {
@@ -259,11 +260,21 @@ export default {
               'Multichain',
             ],
           },
+          {
+            title: 'Recurring/Next…',
+            list: [
+              'DAT3 Mobile v2.0(iOS)',
+              'KOL Cooperation',
+              'MatchDAO open API',
+              'Infomercial Ads',
+              'UI/UX, Bug Fixes, Product Upgrades',
+            ],
+          },
         ],
       },
     ],
     channels: {
-      title: 'Download DApp to earn ETH & DAT3',
+      title: 'Download DApp to earn APTOS & DAT3',
       logo: img_download,
       url: 'https://play.google.com/store/apps/details?id=com.dat3.social'
     },

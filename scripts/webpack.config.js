@@ -2,7 +2,7 @@
  * @Author: WangHao
  * @Date: 2023-01-04 15:23:04
  * @LastEditors: WangHao
- * @LastEditTime: 2023-01-25 13:10:33
+ * @LastEditTime: 2023-04-03 22:56:05
  * @Description: 请添加当前文件描述
  */
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
@@ -64,7 +64,7 @@ const config = {
         type: 'javascript/auto',
       },
       {
-        test: /\.(svg|png|jpg|gif)$/i,
+        test: /\.(svg|png|jpg|gif|jpeg)$/i,
         use: [
           {
             loader: 'file-loader',
