@@ -212,23 +212,23 @@ export default {
           {
             title: 'Products Upgrades:',
             list: [
-              '(In Progress)DAT3 Web v1.x',
-              '(In Progress)Proposals & Voting Mechanism',
-              '(In Progress)AI-driven ChatBot',
+              'DAT3 Web v1.x',
+              'Proposals & Voting Mechanism',
+              'AI-driven ChatBot',
             ],
           },
           {
             title: 'Community/Growth:',
             list: [
-              '(In Progress)Expanding KOL Partnerships',
-              '(In Progress)On-chain Governance',
-              '(In Progress)DAT3 NFT Party',
+              'Expanding KOL Partnerships',
+              'On-chain Governance',
+              'DAT3 NFT Party',
             ],
           },
           {
             title: 'Other Build:',
             list: [
-              '(In Progress)Multilingual Integration',
+              'Multilingual Integration',
             ],
           },
         ],
@@ -260,12 +260,12 @@ export default {
           {
             title: 'Recurring/Next…',
             list: [
-              '(Researching)Personalized Recommendation System',
-              '(In Progress)Ad Collaborations & Infomercial Campaigns',
-              '(In Progress)Onboarding More KOLs & Celebrities',
-              '(Researching)MatchDAO Open API',
-              '(In Progress)Blockchain Performance Optimization',
-              '(In Progress)Continuous UI/UX Improvement, Bug Fixes & Product Upgrades',
+              'Personalized Recommendation System',
+              'Ad Collaborations & Infomercial Campaigns',
+              'Onboarding More KOLs & Celebrities',
+              'MatchDAO Open API',
+              'Blockchain Performance Optimization',
+              'Continuous UI/UX Improvement, Bug Fixes & Product Upgrades',
             ],
           },
         ],
