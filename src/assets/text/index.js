@@ -168,10 +168,9 @@ export default {
       x: [0, 4380, 8760, 13140, 17520, 21900, 26280, 30660],
       xLimit: { min: 0, max: 32000 },
       y: {
-        talk: [0, 35, 52.5, 61.25, 65.63, 67.81, 68.91, 69.45], 
-        team: [0, 15, 22.5, 26.25, 28.13, 29.06, 29.53, 29.77], 
+        talk: [0, 50, 75, 87.5, 93.73333332, 96.86666666, 98.43333332, 99.2],
+        team: [0, 15, 22.5, 26.25, 28.12, 29.06, 29.54, 29.68],
         stake: [0, 7.5, 11.25, 13.13, 14.06, 14.53, 14.77, 14.84],
-        // activ: [0, 10, 15, 17.5, 18.75, 19.38, 19.69, 19.84],
       },
       yLimit: { min: 0, max: 100 },
       color: {
@@ -213,23 +212,23 @@ export default {
           {
             title: 'Products Upgrades:',
             list: [
-              'DAT3 Andriod & Website v1.0 ',
-              'Referral System',
-              'Token Rewards & Stake',
+              '(In Progress)DAT3 Web v1.x',
+              '(In Progress)Proposals & Voting Mechanism',
+              '(In Progress)AI-driven ChatBot',
             ],
           },
           {
             title: 'Community/Growth:',
             list: [
-              'Internal Testing',
-              'DAT Invitation Pass Mint',
+              '(In Progress)Expanding KOL Partnerships',
+              '(In Progress)On-chain Governance',
+              '(In Progress)DAT3 NFT Party',
             ],
           },
           {
             title: 'Other Build:',
             list: [
-              '$DAT3 - The governance token',
-              'Contract Audit'
+              '(In Progress)Multilingual Integration',
             ],
           },
         ],
@@ -241,33 +240,32 @@ export default {
           {
             title: 'Products Upgrades:',
             list: [
-              'Proposals & Voting',
-              'Analytic Dashboard',
-              'Machine Learning Algorithms',
+              'DAT3 Mobile v2.0 (iOS)',
+              'Data Visualization & Reporting',
             ],
           },
           {
             title: 'Community/Growth:',
             list: [
-              'Governance',
-              'Auctions of DAT3 NFT',
+              'Web2 social media feed ads',
             ],
           },
           {
             title: 'Other Build:',
             list: [
-              'Multilingual',
-              'Multichain',
+              'Enhanced Security & Privacy Measures',
+              'Cross-chain',
             ],
           },
           {
             title: 'Recurring/Next…',
             list: [
-              'DAT3 Mobile v2.0(iOS)',
-              'KOL Cooperation',
-              'MatchDAO open API',
-              'Infomercial Ads',
-              'UI/UX, Bug Fixes, Product Upgrades',
+              '(Researching)Personalized Recommendation System',
+              '(In Progress)Ad Collaborations & Infomercial Campaigns',
+              '(In Progress)Onboarding More KOLs & Celebrities',
+              '(Researching)MatchDAO Open API',
+              '(In Progress)Blockchain Performance Optimization',
+              '(In Progress)Continuous UI/UX Improvement, Bug Fixes & Product Upgrades',
             ],
           },
         ],
